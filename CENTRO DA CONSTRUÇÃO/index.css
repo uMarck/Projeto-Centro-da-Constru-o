@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(32, 109, 209);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(27, 126, 231);
+}
+
+.logo img {
+    filter: drop-shadow(1px 1px 0.5px black);
+}
+
+h1, h3 {
+    font-family: arial;
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#ativo {
+    border-bottom: 1px solid rgb(241, 255, 40);
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Montserrat', 'Fredoka One', Verdana, arial;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px 0 0 10px;
+    text-align: end;
+    transition: 0.5s;
+}
+
+.search input:hover {
+    box-shadow: 1px 1px 5px rgb(48, 99, 170);
+}
+
+input::placeholder {
+    padding: 15px;
+}
+
+.search img {
+    position: relative;
+    left: 28px;
+    bottom: -3px;
+    width: 15px;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+    color: white;
+}
+
+.container h1 {
+    padding: 15px;
+    margin: 10px;
+}
+
+.novidades {
+    color: white;
+    text-align: center;
+}
+
+.novidades h1 {
+    padding: 25px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#card {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(27, 126, 231);
+    transition: 0.5s;
+    margin: 10px;
+}
+
+#card img {
+    width: 250px;
+}
+
+#card a {
+    text-decoration: none;
+    color: rgb(241, 240, 240);
+}
+
+#card:hover {
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 55px rgb(157, 157, 157);
+}
+
+#card img {
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+#carrosel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+
+#carrosel img {
+    width: 90px;
+    filter: drop-shadow(1px 1px 0.5px black);
+    transition: 0.5s;
+}
+
+#carrosel img:hover {
+    width: 100px;
+    filter: drop-shadow(3x 2px 2px black);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    font-family: 'Montserrat', 'Fredoka One', Arial, verdana;
+    color: white;
+    line-height: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: rgb(0, 121, 243);
+}
+
+#info, #redes, #contato {
+    padding: 50px;
+    margin: 55px;
+}
+
+#eu {
+    color: white;
+    font-family: 'Fredoka One', arial, verdana;
+    text-align: center;
+    background-color: red;
+    padding: 50px;
+}
+
+#erro {
+    display: none;
+}
+
+@media screen and (max-width: 914px) {
+    #erro {
+        height: 100vh;
+        text-align: center;
+        display: block;
+        color: red;
+        width: 415px;
+        margin: 355px 0 0 0;
+        font-size: 25px;
+        font-family: 'Montserrat', 'Fredoka one';
+    }
+
+    .container, .novidades, footer, header, #carrosel, #eu, #parc{
+        display: none;
+    }
+}
